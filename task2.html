@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: bisque;
+        }
+        .container{
+            display:flex;
+            margin:20px;
+            padding:50px;
+            border:5px black solid;
+            background-color: coral;
+            width: auto;
+            align-items: center;
+  
+        }
+        @media screen and (max-width:600px){
+            .container{
+                 flex-direction:column;
+            }
+
+           
+
+        } 
+            
+        
+    </style>
+</head>
+<body>
+    <h1>
+        Student Details
+    </h1>
+    <div class="container">
+        <img id="img1" src="img1.png" alt="Sample Image">
+      
+        <h1 id="name">
+            Name:Aditya
+        </h1>
+       
+        <h1 id="branch">
+           Branch : CSE
+        </h1>
+       
+        <h1 id="email">
+            Email:aditya@gmail.com
+        </h1>
+    </div>
+</body>
+</html>

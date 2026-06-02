@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+              background-color: darkorchid;
+        }
+        .container{
+            display: grid;
+          
+            grid-template-areas: "header header"
+                                    "side main ";
+           
+
+        }
+        .header{
+            background-color: blanchedalmond;
+            font-weight: bold;
+            color: darkorange;
+            text-align: center;
+            font-size: larger;
+            grid-area: header;
+        }
+        nav ul{
+            display:flex;
+            flex-direction: column;
+            color:black
+            ;
+        }
+        .side{
+            background-color: bisque;
+            grid-area:side
+        }
+        .main{
+            background-color: plum;
+            color: black;
+            font-size: medium;
+            grid-area: main;
+        }
+        @media screen and (max-width:480px){
+            .container{
+                grid-template-areas: "header"
+                                        "main";
+            }
+            .side{
+                display: none;
+               }
+        }
+    </style>
+</head>
+<body>
+    <h1> Student Management Portal</h1>
+    <div class="container">
+        <div class="header">
+            Dashboard
+        </div>
+        <div class ="side">
+            <nav>
+                <ul>
+                    <li> Home</li>
+                    <li>About  </li>
+                    <li>Contacts</li>
+                </ul>
+            </nav>
+        </div>
+        <div class="main">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam cumque odit quas quasi molestias rerum numquam. Autem, saepe quas iusto nulla facilis veniam ratione aperiam magni earum iste? Fuga, voluptate!
+        </div>
+    </div>
+</body>
+</html>
